@@ -18,9 +18,15 @@ body {
     justify-content: center;
     font-family: "Raleway" , sans-serif;
     padding: 0px 50px;
-    gap: 35px;
-    width: 1440px;
-    height: 1719.52px;  
+    gap: 35px; 
+    margin-top: 0px; 
+}
+
+header{
+    display: flex ;
+    justify-content:space-between;
+    Padding:0px, 50px, 0px, 50px;
+    Gap:35px;
 }
 
 .main-container {
@@ -30,64 +36,32 @@ body {
     box-sizing: border-box;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    height: 79px;
-    align-items: center;
-}
 a {
     text-decoration: none;
     color:black ; 
 }
 
 .logo {
-    position: absolute;
     width: 61.09px;
     height: 19px;
-    left: 50px;
-    top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-#container_barre {
+header nav {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 0px;
-    gap: 68px;
-    width: 244px;
-    height: 35px;
+    justify-content: space-between;
+    gap: 69px;
 }
 
-.container_barre_1:hover {
+header nav a:hover {
     border-top: #0065FC 2px solid;
-    width: 113px;
 }
 
-.container_barre_1 {
-    display: flex;
-    width: 113px;
-    height: 35px;
-    align-items: end;
-    justify-content: center;
-}
-
-.barre1 {
-margin-top: 14px;
-}
-
-.container_barre_2:hover {
-    border-top: #0065FC 2px solid;
-    width: 113px;
-}
-
-.container_barre_2 {
-    display: flex;
-    width: 63px;
-    height: 35px;
-    align-items: end;
-    justify-content: center;
+header nav a{
+    padding-top:16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400; 
 }
 
 .section-title {
