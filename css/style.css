@@ -15,11 +15,7 @@
 
 body {
     display: flex;
-    justify-content: center;
-    font-family: "Raleway" , sans-serif;
-    padding: 0px 50px;
-    gap: 35px; 
-    margin-top: 0px; 
+    justify-content: center; 
 }
 
 header{
@@ -34,34 +30,6 @@ header{
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-    color:black ; 
-}
-
-.logo {
-    width: 61.09px;
-    height: 19px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    gap: 69px;
-}
-
-header nav a:hover {
-    border-top: #0065FC 2px solid;
-}
-
-header nav a{
-    padding-top:16px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400; 
 }
 
 .section-title {
@@ -91,6 +59,132 @@ header nav a{
 .neutralStar {
     color: var(--main-bg-color)
 }
+
+/**************** Header *****************/
+header{
+    display: flex ;
+    justify-content:space-between;
+    Padding:0px, 50px, 0px, 50px;
+    Gap:35px;
+}
+a {
+    text-decoration: none;
+    color:black ; 
+}
+
+.logo {
+    width: 61.09px;
+    height: 19px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 69px;
+}
+
+header nav a:hover {
+    border-top: #0065FC 2px solid;
+}
+
+header nav a{
+    padding-top:16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400; 
+}
+
+/****** Section Titre et presentation ***********/
+.title-presentation{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway';
+    font-style: normal;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+.title-presentation h1{
+    margin: 0;
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 22px;
+
+}
+.title-presentation p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/****** Section Recherche ***********/
+.section-search{
+    display: flex;
+    font-family: 'Raleway';
+    font-style: normal;
+    margin-bottom: 220px;
+    margin-top: 35px;
+}
+
+/****** Formulaire ***********/
+form {
+    display: flex;
+    flex-direction: row; 
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    background: #FFFFFF;
+    align-items: center;
+    padding: 0px;
+    width: 377px;
+    height: 49px;
+}
+
+.container-form{
+    display: flex;
+}
+
+.container-form label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 49px;
+    left: 0px;
+    top: 0px;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;   
+}
+
+.container-form label i{
+    color: black;
+    background-color: rgba(242, 242, 242, 1);
+}
+
+.container-form input {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    width: 195px;
+    line-height: 21px;
+    border: 1px solid #F2F2F2;
+}
+
+.btn-form{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 0px 15px 15px 0px;
+    background-color:rgba(0, 101, 252, 1);
+    border: 1px solid #0065FC;
+    color:#FFFFFF ;
+    padding-right: 21px;
+}
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
