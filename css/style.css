@@ -120,9 +120,10 @@ header nav a{
 /****** Section Recherche ***********/
 .section-search{
     display: flex;
+    flex-direction: column;
     font-family: 'Raleway';
     font-style: normal;
-    margin-bottom: 220px;
+    margin-bottom: 179px;
     margin-top: 35px;
 }
 
@@ -183,6 +184,59 @@ form {
     color:#FFFFFF ;
     padding-right: 21px;
 }
+
+.btn-form-mobile {
+    display:none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 0px 15px 15px 0px;
+    background-color:rgba(0, 101, 252, 1);
+    border: 1px solid #0065FC;
+    padding-right: 21px;
+}
+
+.btn-form-mobile i{
+    color:#FFFFFF ;
+}
+
+
+/****** Filtres ***********/
+.container-filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width: 758px;
+    height: 50px;
+    padding-bottom: 94px;
+    padding-top: 35px;
+
+}
+
+.container-filter h2{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
