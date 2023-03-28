@@ -260,6 +260,12 @@ i.fa-solid.fa-person{
     padding-top: 37px;
 }
 
+.fa-solid.fa-circle-info{
+    background:#0065FC ;
+    color:white;
+    border-radius: 50px;
+    border: solid 1px rgba(217, 217, 217, 1);
+}
     
 
 
