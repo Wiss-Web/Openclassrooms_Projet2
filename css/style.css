@@ -246,6 +246,12 @@ form {
     background: #DEEBFF;
 }
 
+i.fa-solid.fa-person{
+    width: 18.44px;
+    height: 22px;
+    font-size: 21px;
+}
+
 .container-info{
     display: flex;
     flex-direction: row;
@@ -253,6 +259,7 @@ form {
     gap: 10px;
     padding-top: 37px;
 }
+
     
 
 
