@@ -23,7 +23,7 @@
 
 <body>
     <div class="main-container">
-    <!-- Structuration de l'entête-->
+        <!-- Structuration de l'entête-->
         <header>  
             <img class="logo" src="./images/logo/Booki.png" alt="Logo Booki" /> 
             <nav>
@@ -33,16 +33,16 @@
         </header>
 
     <main>
-    <!-- Section Titre, présentation -->
+        <!-- Section Titre, présentation -->
         <section class="title-presentation">
                 <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
         </section>
 
-    <!-- Section Recherche -->
+        <!-- Section Recherche -->
         <section class="section-search">
 
-    <!-- Formulaire -->
+            <!-- Formulaire -->
             <form method="post" action="" >
                 <div class="container-form">
                     <label for="lieu" >
@@ -57,7 +57,7 @@
                 </button>
             </form>
 
-    <!-- Filtres -->
+            <!-- Filtres -->
             <div class="container-filter">
                 <h2>Filtres</h2>
 
@@ -88,17 +88,87 @@
             </div>
         </section> 
              
-    <!-- Section Groupe Hebergement et populaire -->
-    <section class></section>
-        <div class="hebergements-and-populaires">
-            <section class="hebergements">
 
+        <!-- Hebergements And Populaires -->
+        <div class="hebergements-and-populaires">
+
+            <!-- Section Hebergements -->
+            <section class="hebergements">
+                <div class="hebergements-title">
+                    <h2 class="section-title">Hébergements à Marseille</h2>
+                </div>
+                <!-- Contenus des cartes Hebergements -->           
+                <div class="hebergements-cards">
+
+                    <!-- Hotel du port -->  
+                    <article class="card">
+                        <img src="./images/hebergements/fred-kleber.jpg" alt="Image représentant le style de la chambre">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Hôtel du port</h3>  
+                                <p class="card-subtitle">Nuit à partir de 58<span class="euro">€</span></p>
+                            </div>
+                            <div class="card-rating">
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                <span class="sr-only">Note de 4 sur 5</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Hotel Chez Amina --> 
+                    <article class="card">
+                        <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image représentant le style de la chambre">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Hôtel Chez Amina</h3>  
+                                <p class="card-subtitle">Nuit à partir de 96<span class="euro">€</span></p>
+                            </div>
+                            <div class="card-rating">
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                <span class="sr-only">Note de 4 sur 5</span>
+                            </div>
+                        </div>
+                    </article>
+                        <!-- Hotel Les mouettes -->
+                        <article class="card">
+                            <img src="./images/hebergements/reisetopia.jpg" alt="Image représentant le style de la chambre">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Hôtel Les mouettes</h3>  
+                                    <p class="card-subtitle">Nuit à partir de 76<span class="euro">€</span></p>
+                                </div>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Note de 4 sur 5</span>
+                                </div>
+                            </div>
+                        </article>
+                </div>        
             </section>
+
+
+
+
+
+            <!-- Populaires -->
             <section class="populaires">
                 <div class="populaires-title">
                     <h2 class="section-title">Les plus populaires</h2>
                     <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                 </div>
+                <!-- Contenus des cartes Populaires -->
                 <div class="populaires-cards">
                     <article class="card">
                         <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -153,10 +223,10 @@
                     </article>
                 </div>
             </section>
-        </div>
     </main>
+        </div>
     <footer></footer>
-</div>
+    </div>
 </body>
 
 </html>
