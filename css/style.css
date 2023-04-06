@@ -260,11 +260,15 @@ i.fa-solid.fa-person{
     padding-top: 37px;
 }
 
-.fa-solid.fa-circle-info{
-    background:#0065FC ;
-    color:white;
+.container-info .fa-solid.fa-info {
+    color:#0065FC ;
     border-radius: 50px;
     border: solid 1px rgba(217, 217, 217, 1);
+    width: 23px;
+    height: 18px;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 6px;
 }
     
 
@@ -273,6 +277,8 @@ i.fa-solid.fa-person{
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    width: 1340px;
+    height: 614px
 }
 
 .hebergements-and-populaires section {
@@ -280,6 +286,7 @@ i.fa-solid.fa-person{
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    width: 68%;
 }
 
 /****** Hebergements ***********/
@@ -291,42 +298,63 @@ i.fa-solid.fa-person{
     padding-bottom: 30px;
 }
 
-/****** A VERIFIER !!!!!!!!! ***********/
 .hebergements-cards{
     display: flex;
-    gap:30px;
+    gap: 26px;
+    flex-wrap: wrap;
+    width: 833.1px;
+    height: 428px
 }
 
-.hebergements-cards.card {
-    flex-direction: row;
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
+.hebergements-cards .card {
+    width: 30%;
 }
 
 .hebergements-cards img{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 33%;
-    height: 134px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    width: 100%;
+    height: 112px;
+    border-radius: 20px 20px 0px 0px ;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 
 }
 
-.hebergements-cards.card-content {
+.hebergements-cards .card-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px 15px;
-    gap: 8px;
-    width: 250.33px;
-    height: 64.25px;
-
 }
 
+.hebergements-cards .card-title{
+    margin: 0px;
+    padding-top: 8px;
+    font-style: normal;
+    font-weight: 700;
+} 
+
+.hebergements-cards .card-subtitle {
+    margin: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.card-rating .fa-star.neutral-star {
+    color: #F2F2F2;
+}
+
+.show-more {
+    font-style: normal;
+    font-size: 18px;
+    margin: 0px;
+    padding-top: 17px;
+}
 
 /****** Populaires ***********/
 .populaires {
@@ -373,6 +401,112 @@ i.fa-solid.fa-person{
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
+section#activities {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+
+.activities-title {
+    padding-top: 65px;
+    padding-bottom: 30px;
+}
+
+.activities-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 26px;
+    margin-bottom: 65px;
+}
+
+.activities-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    height: 439px;
+    background: none;
+}
+
+.activities-cards img {
+    width: 297.5px;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activities-cards .card-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 297.5px;
+    height: 55px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.activities-cards .card-txt {
+    margin-left: 19px;
+    font-size: 16px;
+}
+
+/****** Footer ***********/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #F2F2F2;
+    width: 1340px;
+    height: 163px;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+
+.footer_info{
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+}
+
+.footer_apropos,
+.footer_hebergements,
+.footer_assistance{
+    padding: 0px;
+    width: 446.67px;
+    height: 163px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0%;
+    margin:auto
+}
+
+.footer_apropos h3,
+.footer_hebergements h3,
+.footer_assistance h3{
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.footer_apropos{
+    padding-left: 20px;
+}
+
+.footer_apropos li,
+.footer_hebergements li,
+.footer_assistance li{
+    padding-top: 15px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px; 
+}
 
 
 
@@ -416,4 +550,6 @@ i.fa-solid.fa-person{
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+
 }
