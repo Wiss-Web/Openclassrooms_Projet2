@@ -61,15 +61,10 @@ header{
 }
 
 /**************** Header *****************/
-header{
-    display: flex ;
-    justify-content:space-between;
-    Padding:0px, 50px, 0px, 50px;
-    Gap:35px;
-}
 a {
     text-decoration: none;
     color:black ; 
+    width: 100%;
 }
 
 .logo {
@@ -103,6 +98,7 @@ header nav a{
     font-style: normal;
     margin-top: 30px;
     margin-bottom: 35px;
+    margin-left: 20px;
 }
 .title-presentation h1{
     margin: 0;
@@ -121,10 +117,7 @@ header nav a{
 .section-search{
     display: flex;
     flex-direction: column;
-    font-family: 'Raleway';
-    font-style: normal;
     margin-bottom: 35px;
-    margin-top: 35px;
 }
 
 /****** Formulaire ***********/
@@ -136,22 +129,20 @@ form {
     background: #FFFFFF;
     align-items: center;
     padding: 0px;
-    width: 377px;
-    height: 49px;
+    width: 36%;
 }
 
 .container-form{
     display: flex;
+    width: 100%;
 }
 
 .container-form label{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
+    width: 35%;
     height: 49px;
-    left: 0px;
-    top: 0px;
     background: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;   
@@ -166,37 +157,36 @@ form {
     text-align: center;
     font-weight: 700;
     font-size: 18px;
-    width: 195px;
-    line-height: 21px;
+    width: 100%;
     border: 1px solid #F2F2F2;
 }
 
 .btn-form{
-    font-family: 'Raleway';
-    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 700;
     font-size: 18px;
     line-height: 46px;
-    text-align: center;
     border-radius: 0px 15px 15px 0px;
     background-color:rgba(0, 101, 252, 1);
     border: 1px solid #0065FC;
     color:#FFFFFF ;
-    padding-right: 21px;
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 31%;
+    height: 51px;
 }
 
 .btn-form-mobile {
     display:none;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
     font-size: 18px;
     line-height: 46px;
-    text-align: center;
     border-radius: 0px 15px 15px 0px;
     background-color:rgba(0, 101, 252, 1);
     border: 1px solid #0065FC;
-    padding-right: 21px;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 
 .btn-form-mobile i{
@@ -208,38 +198,27 @@ form {
 .container-filter{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     gap: 15px;
-    width: 783px;
-    height: 50px;
-    padding-top: 35px;
+    margin-top: 35px;
+
 }
 
 .container-filter h2{
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
     font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    color: #000000;
 }
 
 .box-filter{
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 4px 19px;
     gap: 10px;
-    width: 173px;
     height: 50px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 17px;
-    line-height: 20px;
 }
 
 .box-filter:hover{
@@ -277,8 +256,6 @@ i.fa-solid.fa-person{
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    width: 1340px;
-    height: 614px
 }
 
 .hebergements-and-populaires section {
@@ -286,7 +263,6 @@ i.fa-solid.fa-person{
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
-    width: 68%;
 }
 
 /****** Hebergements ***********/
@@ -300,14 +276,14 @@ i.fa-solid.fa-person{
 
 .hebergements-cards{
     display: flex;
-    gap: 26px;
+    gap: 30px;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 833.1px;
-    height: 428px
 }
 
 .hebergements-cards .card {
-    width: 30%;
+    width: 29%;
+    height: 207.25px;
 }
 
 .hebergements-cards img{
@@ -315,7 +291,7 @@ i.fa-solid.fa-person{
     flex-direction: row;
     align-items: center;
     width: 100%;
-    height: 112px;
+    height: 124px;
     border-radius: 20px 20px 0px 0px ;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 
@@ -350,10 +326,12 @@ i.fa-solid.fa-person{
 }
 
 .show-more {
+    display: block;
     font-style: normal;
     font-size: 18px;
     margin: 0px;
-    padding-top: 17px;
+    padding-top: 30px;
+    font-weight: bold;
 }
 
 /****** Populaires ***********/
@@ -407,6 +385,7 @@ section#activities {
     flex-direction: column;
     align-items: flex-start;
     padding-left: 30px;
+    width: 96%;
 }
 
 .activities-title {
@@ -419,8 +398,9 @@ section#activities {
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 26px;
+    gap: 30px;
     margin-bottom: 65px;
+    flex-wrap: wrap;
 }
 
 .activities-cards .card {
@@ -429,12 +409,11 @@ section#activities {
     justify-content: flex-end;
     align-items: center;
     padding: 0px;
-    height: 439px;
-    background: none;
+    width: 23%;
 }
 
 .activities-cards img {
-    width: 297.5px;
+    width: 100%;
     height: 380px;
     border-radius: 20px 20px 0px 0px;
 }
@@ -443,7 +422,6 @@ section#activities {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 297.5px;
     height: 55px;
     background: #FFFFFF;
     border-radius: 0px 0px 20px 20px;
@@ -457,27 +435,18 @@ section#activities {
 /****** Footer ***********/
 footer{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     background: #F2F2F2;
-    width: 1340px;
-    height: 163px;
+    flex-wrap: wrap;
     padding-top: 20px;
-    padding-bottom:20px;
-}
-
-.footer_info{
-    display: flex;
-    align-items: flex-end;
-    padding: 0;
+    padding-bottom: 20px;
+    justify-content: space-between;
 }
 
 .footer_apropos,
 .footer_hebergements,
 .footer_assistance{
     padding: 0px;
-    width: 446.67px;
-    height: 163px;
+    width: 32%;
 }
 
 
