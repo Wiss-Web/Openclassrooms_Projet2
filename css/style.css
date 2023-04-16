@@ -98,7 +98,6 @@ header nav a{
     font-style: normal;
     margin-top: 30px;
     margin-bottom: 35px;
-    margin-left: 20px;
 }
 .title-presentation h1{
     margin: 0;
@@ -276,14 +275,13 @@ i.fa-solid.fa-person{
 
 .hebergements-cards{
     display: flex;
-    gap: 30px;
+    gap: 16px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .hebergements-cards .card {
     width: 29%;
-    height: 207.25px;
 }
 
 .hebergements-cards img{
@@ -380,12 +378,12 @@ i.fa-solid.fa-person{
 }
 
 /****** Activités ***********/
-section#activities {
+.activities {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 30px;
-    width: 96%;
+    width: 100%;
 }
 
 .activities-title {
@@ -409,7 +407,7 @@ section#activities {
     justify-content: flex-end;
     align-items: center;
     padding: 0px;
-    width: 23%;
+    width: 22%;
 }
 
 .activities-cards img {
@@ -477,15 +475,47 @@ ul {
     font-size: 16px; 
 }
 
-
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    /****** section Titre , Presentation ***********/
+    .title-presentation {
+        margin-left: 0px;
+    }
+
+    /****** Formulaire ***********/
+    form {
+        width: 53%;
+    }
+
+    .container-form label {
+        width: 24%;
+    }
+
+    .btn-form {
+        width: 35%;
+    }
+
+    /****** Filtres ***********/
+    .container-filter {
+        gap: 20px 15px;
+    }
+
+
+    .container-filter h2 {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .container-info p {
+        margin:0px;
+    }
+    /****** Hebergements et populaires ***********/
     .hebergements-and-populaires {
         flex-direction: column;
+        gap:0px;
     }
 
     .hebergements {
@@ -514,11 +544,243 @@ ul {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    
+    /****** Contenues des cartes Hébergements ***********/
+    .hebergements-cards .card {
+    width: 28%;
+    height: 169.25px;
+    padding: 4px;
+    }
+
+    .hebergements-cards img {
+    height: 79px;
+    }
+
+    .hebergements-cards .card-content {
+        padding: 4px;
+    }
+
+    h3.card-title .vieux-port{
+        margin-top: 25px;
+    }
+
+    /****** Section Activité ***********/   
+    .activities {width: 94%;}
+
+    /****** Cartes des Activités ***********/
+    .activities-cards {
+    gap: 27px
+    }
+
+    .activities-cards .card {
+        width: 21%;
+    }
+
+    .activities-cards img {
+        width: 100%;
+        height: 200px;
+    }
+    .activities-cards .card-content {
+        margin-bottom: 16px;
+    }
+
+    /****** Footer ***********/
+    .footer_apropos, .footer_hebergements, .footer_assistance {
+        width: 28%;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+@media (max-width: 768px) {
+body { 
+    margin: 0px;
+    width: 100%;
+    }
+/****** Header ******/
+    .main-container {
+    padding: 0px;
+    }
 
-
+header {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    margin-top: 30px;
+    margin-bottom: 29px
 }
+
+    .logo {
+    height: 19px;
+    padding: 0px;
+}
+
+header nav {
+    width: 100%;
+    gap: 0px;
+    text-align: center;
+}
+
+
+header nav a:first-child {
+    border-top: none;
+    border-bottom: #0065FC 2px solid;
+    padding-bottom: 15px;
+}
+
+header nav a:last-child {
+    border-top: none;
+    border-bottom: #F2F2F2 2px solid;
+    padding-bottom: 15px;
+}
+
+header nav a {
+    padding-top: 30px;
+    padding-bottom: 17px;
+}
+
+/****** Section Titre et presentation ***********/
+    .title-presentation{
+    width: 79%;
+    margin-left: 20px;
+    }
+
+/****** Section Titre et presentation ***********/
+    .section-search {
+    margin-left: 20px;
+    }
+
+/****** Formulaire ***********/
+form {
+    width: 95%;
+}
+
+    .container-form {
+    display: flex;
+    width: 100%;
+    }
+    .container-form label {
+    width: 22%;
+    border-radius: 14px 0px 0px 14px;
+    }
+    .container-form input {
+    border: 0px solid #F2F2F2;
+    text-align: start;
+    padding-left: 24px;
+    }
+    .btn-form {
+    display:none;
+    }
+    .btn-form-mobile {
+    display: flex;
+    border-radius: 15px 16px 15px 16px;
+    border: 1px solid #0065FC;
+    height: 51px;
+    align-items: center;
+    }
+
+/****** Filtres ***********/
+    .container-filter h2 {
+    font-size: 18px;
+    width: 100%;
+    }
+    .container-info p {
+    margin:0px;
+    }
+    .container-info .fa-solid.fa-info {
+        width: 29px;
+    }
+    .box-filter{
+    width: 34%;
+    font-size: 14px;
+    }
+
+/****** Hebergement and Populaires ***********/
+    .hebergements-and-populaires {
+    flex-direction: column-reverse;
+    }
+    .hebergements-and-populaires section { 
+        border-radius: 0px;
+        box-sizing: content-box;
+    }
+    .populaires {
+    margin: 0px;    
+    }
+
+/****** Populaires ***********/
+    .populaires-title {
+    width: 88%; 
+    }
+
+/****** Contenues des cartes populaires ***********/  
+    .populaires-cards {
+    flex-direction: column;
+    width: 88%;
+    }
+    .populaires-cards .card {
+    width: 97%;
+    }
+    .populaires-cards .card-content{
+        width: 60%;
+    }
+
+/****** Section Hebergements ***********/
+    .hebergements-and-populaires .hebergements {
+    background-color: transparent;
+    padding-top: 35px;
+    width: 88%;
+    }
+
+/****** Contenus des cartes Hebergement ***********/
+    .hebergements-cards {
+    flex-direction: column;
+    }
+    .hebergements-cards .card {
+        width: 97%;
+        height: 191px;
+    }
+    .hebergements-cards img {
+        height: 105px;
+    }
+
+/****** Afficher plus ***********/
+    .show-more {
+    padding-top: 15px 
+    }
+
+/****** Section Activités ***********/
+    .activities {
+    padding-top: 55px;
+    padding-left: 41px;
+    width: 92%;
+    }
+    .activities-title {
+        padding-top: 0px;
+    }
+
+/****** Carte des Activités ***********/
+    .activities-cards {
+    gap: 15px;
+    }
+    .activities-cards .card {
+        width: 86%;
+    }
+    .activities-cards .card-content {
+    margin-bottom: 0px;
+    }
+
+/****** footer ***********/ 
+footer {
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px;
+    width: 89%;
+    width: 100%;
+    }
+    .footer_apropos, .footer_hebergements, .footer_assistance {
+            width: 85%;
+    }
+    .footer_apropos{
+    padding: 0px;
+    }
+
+} 
